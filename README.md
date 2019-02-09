@@ -5,6 +5,10 @@ so it has no build tools installed. The Erlang installation is provided so one c
 releases. The caveat of course is if one has NIFs which require a native compilation toolchain, but that is
 left as an exercise for the reader.
 
+
+This is based on [bitwalker/alpine-elixir](https://github.com/bitwalker/alpine-elixir) with additional build libraries specifically 
+for building erlang libraries with native C bindings.
+
 ## Usage
 
 NOTE: This image sets up a `default` user, with home set to `/opt/app` and owned by that user. The working directory
@@ -24,7 +28,7 @@ iex(1)>
 Extending for your own application:
 
 ```dockerfile
-FROM bitwalker/alpine-elixir:1.8.1
+FROM iammac360/alpine-elixir:1.8.1
 
 # Set exposed ports
 EXPOSE 5000
