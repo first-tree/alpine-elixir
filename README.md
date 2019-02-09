@@ -5,7 +5,6 @@ so it has no build tools installed. The Erlang installation is provided so one c
 releases. The caveat of course is if one has NIFs which require a native compilation toolchain, but that is
 left as an exercise for the reader.
 
-
 This is based on [bitwalker/alpine-elixir](https://github.com/bitwalker/alpine-elixir) with additional build libraries specifically 
 for building erlang libraries with native C bindings.
 
